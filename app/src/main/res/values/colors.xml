@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#FFD180</color>
+    <color name="colorPrimaryDark">#FBC02D</color>
+    <color name="colorAccent">#0BB4E2</color>
+    <color name="mustard">#FFC55C</color>
+    <color name="teaGreen">#C9F2C7</color>
+    <color name="platinum">#DEE5E5</color>
+    <color name="maximumBlue">#47A8BD</color>
+    <color name="winterGreenDream">#548687</color>
+    <color name="mediumAquamarine">#59C9A5</color>
+    <color name="design_default_color_primary" tools:override="true">#47A8BD</color>
+    <color name="design_default_color_primary_dark" tools:override="true">#031926</color>
+    <color name="design_default_color_primary_variant" tools:override="true">#1F5673</color>
+</resources>

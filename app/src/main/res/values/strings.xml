@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">UploadRetrieveFB</string>
+    <string name="brandLogo">Company Logo</string>
+    <string name="sell">Sell</string>
+    <string name="account">Account</string>
+    <string name="invent">Inventory</string>
+    <string name="report">Report</string>
+    <string name="job">Job Work</string>
+    <string name="repair">Repair</string>
+    <string name="buy">Purchase</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="dashboardImage">DashBoard Icon</string>
+    <string name="bill">Bill</string>
+    <string name="about">About Us</string>
+    <string name="login">Login</string>
+    <string name="coupon">Coupon</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="forgotPasswordView">Forgot Password ?</string>
+    <string name="register">Register</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="registrationView">Registration</string>
+    <string name="Name">Full Name</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="genderTextView">Gender</string>
+    <string name="profileChooser">Choose Picture</string>
+    <string name="registerbtn">Register</string>
+    <string name="back">Back to Login</string>
+    <string name="logout">Logout</string>
+    <string name="phone">Mobile No.</string>
+    <string name="address">Address</string>
+    <string name="sales_textView">Nothing To Display . . .</string>
+    <string name="manage">Manage</string>
+    <string name="chat">Chat</string>
+    <string name="cart">Cart</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="title">Title</string>
+    <string name="category">Category</string>
+    <string name="uploadImages">Select Images</string>
+    <string name="createSellItem">Create Sell Item</string>
+    <string name="header">Select Category</string>
+    <string name="Image">image</string>
+    <string-array name="category">
+        <item>Old Machine</item>
+        <item>New Machine</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        tools:context=".MainActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_sell_title"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="349dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="36dp"
+            android:hint="@string/title"
+            android:inputType="text"
+            app:boxStrokeColor="@color/maximumBlue"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/maximumBlue"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="@+id/toolbar"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sell_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_sell_Description"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="349dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="36dp"
+            android:hint="@string/description"
+            android:inputType="text"
+            app:boxStrokeColor="@color/maximumBlue"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/maximumBlue"
+            app:layout_constraintEnd_toEndOf="@+id/text_sell_title"
+            app:layout_constraintStart_toStartOf="@+id/text_sell_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_sell_title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sell_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="349dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="36dp"
+            android:elevation="5dp"
+
+            android:prompt="@string/header"
+            app:layout_constraintEnd_toEndOf="@+id/text_sell_Description"
+            app:layout_constraintStart_toStartOf="@+id/text_sell_Description"
+            app:layout_constraintTop_toBottomOf="@+id/text_sell_Description" />
+        <!--com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_sell_category"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="349dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="36dp"
+            android:hint="@string/category"
+            android:inputType="text"
+            app:boxStrokeColor="@color/maximumBlue"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/maximumBlue"
+            app:layout_constraintEnd_toEndOf="@+id/text_sell_Description"
+            app:layout_constraintStart_toStartOf="@+id/text_sell_Description"
+            app:layout_constraintTop_toBottomOf="@+id/text_sell_Description">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sell_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_sell_price"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="349dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="36dp"
+            android:hint="@string/price"
+            android:inputType="numberDecimal"
+            app:boxStrokeColor="@color/maximumBlue"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/maximumBlue"
+            app:layout_constraintEnd_toEndOf="@+id/category_spinner"
+            app:layout_constraintStart_toStartOf="@+id/category_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/category_spinner">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sell_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sell_select_image"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/maximumBlue"
+            android:text="@string/uploadImages"
+            android:textColor="#FAF7F7"
+            app:layout_constraintEnd_toEndOf="@+id/text_sell_price"
+            app:layout_constraintStart_toStartOf="@+id/text_sell_price"
+            app:layout_constraintTop_toBottomOf="@+id/text_sell_price"
+            app:rippleColor="@color/mediumAquamarine" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sell_preview_recyler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/sell_select_image"
+            app:layout_constraintStart_toStartOf="@+id/text_sell_price"
+            app:layout_constraintTop_toBottomOf="@+id/sell_select_image" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sell_createSellItem"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/maximumBlue"
+            android:text="@string/createSellItem"
+            android:textColor="#FAF7F7"
+            app:layout_constraintEnd_toEndOf="@+id/sell_preview_recyler"
+            app:layout_constraintHorizontal_bias="0.937"
+            app:layout_constraintStart_toStartOf="@+id/sell_preview_recyler"
+            app:layout_constraintTop_toBottomOf="@+id/sell_preview_recyler"
+            app:rippleColor="@color/mediumAquamarine" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

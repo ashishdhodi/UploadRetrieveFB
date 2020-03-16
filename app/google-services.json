@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "396262639109",
+    "firebase_url": "https://uploadretrievefb.firebaseio.com",
+    "project_id": "uploadretrievefb",
+    "storage_bucket": "uploadretrievefb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396262639109:android:6c2b54334d458afde53e6c",
+        "android_client_info": {
+          "package_name": "com.sem6.uploadretrievefb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396262639109-to20bpjcjkdtc84t27lhp0a6jni3u5mk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN48h9_rN1GhaQfpiPbn_1Z5_TZh6_rug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396262639109-to20bpjcjkdtc84t27lhp0a6jni3u5mk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
